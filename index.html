@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>MuVI - MVP 1</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style type="text/css">
+		img {
+			width: 180px;
+			height: 300px;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>MuVI</h1>
+					<h3>Museus Virtuais Interativos</h3>
+					<p>
+						<small>Criada por <a href="http://github.com/guilhermejcgois">Guilherme J. de C. Gois</a> / <a href="http://twitter.com/guilhermejcgois">@guilhermejcgois</a> e Thales Chagas</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Quem é você MuVI?</h2>
+					<p>
+						A MuVI (Museus Virtuais Interativos) é uma fábrica de software especializada na construção de museus virtuais [interativos] focados na aprendizagem eletrônica.
+					</p>
+				</section>
+
+				<section>
+					<h2>O que nosso MVP deveria fazer?</h2>
+					<p class="fragment">Navegar sem efetuar login</p>
+					<p class="fragment">Navegar de forma guiada</p>
+					<p class="fragment">Realizar desafios durante a navegação</p>
+					<p class="fragment">Ser <i>crossbrowser</i></p>
+					<p class="fragment">Permitir interação via mouse, teclado e touch</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Como?</h2>
+						<p>Para saber como, vamos descer e ver nossas tarefas</p>
+						<p>Conseguimos?</p>
+						<p class="fragment">Como nem tudo são rosas, quase! =/</p>
+					</section>
+					<section>
+						<h2>Sprint 1 Backlog Items</h2>
+						<img src="s1bi-a.png">
+						<img src="s1bi-b.png">
+					</section>
+					<section>
+						<h2>Tarefas a fazer</h2>
+						<img src="todo.png">
+					</section>
+					<section>
+						<h2>Tarefas sendo feitas</h2>
+						<img src="doing1.png">
+						<img src="doing2.png">
+						<img src="doing3.png">
+					</section>
+					<section>
+						<h2>Tarefas terminadas 1 de 3</h2>
+						<img src="done1.png">
+						<img src="done2.png">
+						<img src="done3.png">
+					</section>
+					<section>
+						<h2>Tarefas terminadas 2 de 3</h2>
+						<img src="done4.png">
+						<img src="done5.png">
+						<img src="done6.png">
+					</section>
+					<section>
+						<h2>Tarefas terminadas 3 de 3</h2>
+						<img src="done7.png">
+					</section>
+				</section>
+
+				<section>
+					<h2>O que nosso MVP faz?</h2>
+					<p class="fragment">Navegar sem efetuar login</p>
+					<p class="fragment">Navegar de forma guiada</p>
+					<p class="fragment"><strike>Realizar desafios durante a navegação</strike></p>
+					<p class="fragment">Ser <i>crossbrowser</i> (ou quase)</p>
+					<p class="fragment">Permitir interação via mouse, teclado e touch</p>
+				</section>
+
+				<section>
+					<h2>E agora?</h2>
+					<p class="fragment">Planejar a sprint 2 e o MVP 2</p>
+					<p class="fragment">Correr e finalizar a o MVP 1</p>
+					<p class="fragment">Atacar o MVP 2 e finalizar a ultima sprint</p>
+					<p class="fragment">Passar na disciplina</p><small class="fragment">ou não</small>
+				</section>
+
+				<section>
+					<h2>MVP 1</h2>
+				</section>
+
+				<section>
+					<h2>Dúvidas?</h2>
+					<p class="fragment">Obrigado =) !</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
